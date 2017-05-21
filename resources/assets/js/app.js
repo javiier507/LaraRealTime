@@ -7,6 +7,14 @@
 
 require('./bootstrap');
 
+
+/*Echo.private('charts')
+.listen('ChartEvent', (e) => {
+    console.log(e.userPosts);
+});*/
+
+
+
 window.Vue = require('vue');
 
 /**
@@ -16,6 +24,8 @@ window.Vue = require('vue');
  */
 
 Vue.component('post', require('./components/Post.vue'));
+
+Vue.component('charts', require('./components/Charts.vue'));
 
 const app = new Vue({
     el: '#app'

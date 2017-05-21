@@ -9,7 +9,7 @@
             <div class="panel-body">
                 {{ $item->name }}
             </div>
-            <favorite :id={{ $item->id }} :votes={{ $item->votes }}></favorite>
+            <post :id={{ $item->id }} :votes={{ $item->votes }}></post>
         </div>
     @endforeach
     
