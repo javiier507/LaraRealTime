@@ -21,7 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //  APP
 
-Route::get('/posts', 'PostController@index')->name('posts');
-Route::post('/vote', 'PostController@vote')->name('vote');
-Route::get('/charts', 'PostController@charts')->name('charts');
-Route::get('/userposts', 'PostController@userPosts');
+Route::group(['middleware' => ['auth']], function () {
+	Route::get('/posts', 'PostController@index')->name('posts');
+	Route::post('/vote', 'PostController@vote')->name('vote');
+	Route::get('/charts', 'PostController@charts')->name('charts');
+	Route::get('/userposts', 'PostController@userPosts');
+});

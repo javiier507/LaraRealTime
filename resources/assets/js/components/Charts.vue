@@ -1,128 +1,119 @@
 <template>
-	<div v-if="status === true">
-		<div>
-			<button class="btn btn-info" @click="update()">Update</button>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<bar-chart :data="data" :options="{responsive: true, maintainAspectRatio: false}"></bar-chart>
-			</div>
-			<div class="col-md-6">
-				<line-chart :data="data" :options="{responsive: true, maintainAspectRatio: false}"></line-chart>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<pie-chart :data="data" :options="{responsive: true, maintainAspectRatio: false}"></pie-chart>
-			</div>
-			<div class="col-md-6">
-				<radar-chart :data="data" :options="{responsive: true, maintainAspectRatio: false}"></radar-chart>
-			</div>
-		</div>
-	</div>
+    <div v-if="status === true">
+        <div class="row">
+            <div class="col-md-6">
+                <bar-chart :data="data" :options="{responsive: true, maintainAspectRatio: false}"></bar-chart>
+            </div>
+            <div class="col-md-6">
+                <line-chart :data="data" :options="{responsive: true, maintainAspectRatio: false}"></line-chart>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <pie-chart :data="data" :options="{responsive: true, maintainAspectRatio: false}"></pie-chart>
+            </div>
+            <div class="col-md-6">
+                <radar-chart :data="data" :options="{responsive: true, maintainAspectRatio: false}"></radar-chart>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-	import BarChart from './charts/BarChart';
-	import LineChart from './charts/LineChart';
-	import PieChart from './charts/PieChart';
-	import RadarChart from './charts/RadarChart';
+    import BarChart from './charts/BarChart';
+    import LineChart from './charts/LineChart';
+    import PieChart from './charts/PieChart';
+    import RadarChart from './charts/RadarChart';
 
-	import { inter } from './Inter';
+    import {
+        inter
+    }
+    from './Inter';
 
-  /*import Echo from 'laravel-echo';
+    export default {
 
-  window.Pusher = require('pusher-js')*/
-	
-	export default {
-  	
-  		components: { BarChart, LineChart, PieChart, RadarChart },
+        components: {
+            BarChart, LineChart, PieChart, RadarChart
+        },
 
-  		mounted() {
-  			//	this.fetchData();
-  		},
+        mounted() {
 
-  		data() {
-  			return {
-  				status: false,
-  				data: {
-  					labels: ['a', 'b', 'c'],
-	    			datasets: [
-	    				{
-	    					label: 'GitHub Commits',
-	          				backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe'],
-	          				data: [40, 20, 52]
-	    				}
-	    			]
-  				}
-  			}
-  		},
+        },
 
-  		methods: {
-  			
-  			update() {
-  				var values = [30, 25, 52];
-  				inter.$emit('updateChartEvent', values);
-  			},
+        data() {
+            return {
+                status: false,
+                data: {
+                    labels: ['a', 'b', 'c'],
+                    datasets: [{
+                        label: 'GitHub Commits',
+                        backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe'],
+                        data: [40, 20, 52]
+                    }]
+                }
+            }
+        },
 
-  			fetchData() {
-  				var self = this;
+        methods: {
 
-  				console.log(self.data);
+            fetchData() {
+                var self = this;
 
-  				axios.get('userposts')
-  				.then((response) => {
-  					
-  					var names = response.data.map((item) => {
-  						return item.name;
-  					});
+                console.log(self.data);
 
-  					var votes = response.data.map((item) => {
-  						return item.votes;
-  					});
-  					
-  					self.data.labels = names;
-  					self.data.datasets[0].label = "top users";
-  					self.data.datasets[0].backgroundColor = [
-  						'rgba(255, 99, 132, 0.2)',
-		                'rgba(54, 162, 235, 0.2)',
-		                'rgba(255, 206, 86, 0.2)'
-  					];
-  					self.data.datasets[0].borderColor = [
-                		'rgba(255,99,132,1)',
-                		'rgba(54, 162, 235, 1)',
-                		'rgba(255, 206, 86, 1)'
-            		];
-            		self.data.datasets[0].borderWidth = 2;
-            		self.data.datasets[0].fill = false;
-  					self.data.datasets[0].data = votes;
+                axios.get('userposts')
+                    .then((response) => {
 
-  					self.status = true;
+                        var names = response.data.map((item) => {
+                            return item.name;
+                        });
 
-  				})
-  				.catch((response) => {
-  					console.log(response);
-  				});
-  			}
-  		},
+                        var votes = response.data.map((item) => {
+                            return item.votes;
+                        });
 
-  		created() {
-  			this.fetchData();
+                        self.data.labels = names;
+                        self.data.datasets[0].label = "top users";
+                        self.data.datasets[0].backgroundColor = [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)'
+                        ];
+                        self.data.datasets[0].borderColor = [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)'
+                        ];
+                        self.data.datasets[0].borderWidth = 2;
+                        self.data.datasets[0].fill = false;
+                        self.data.datasets[0].data = votes;
 
-        Echo.private('charts')
-        .listen('ChartEvent', (e) => {
-            console.log(e);
+                        self.status = true;
 
-            var votes = e.userPosts.map((item) => {
-              return item.votes;
-            });
+                    })
+                    .catch((response) => {
+                        console.log(response);
+                    });
+            }
+        },
 
-            console.log(votes);
+        created() {
+            this.fetchData();
 
-            inter.$emit('updateChartEvent', votes);
-        })
+            Echo.private('charts')
+                .listen('ChartEvent', (e) => {
+                    console.log(e);
 
-    	}
-  		
-	}
+                    var votes = e.userPosts.map((item) => {
+                        return item.votes;
+                    });
+
+                    console.log(votes);
+
+                    inter.$emit('updateChartEvent', votes);
+                })
+
+        }
+
+    }
 </script>

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 453);
+/******/ 	return __webpack_require__(__webpack_require__.s = 454);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -15562,43 +15562,43 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.mixins = exports.Bubble = exports.Radar = exports.PolarArea = exports.Pie = exports.Line = exports.Doughnut = exports.HorizontalBar = exports.Bar = exports.VueCharts = undefined;
 
-var _Bar = __webpack_require__(433);
+var _Bar = __webpack_require__(434);
 
 var _Bar2 = _interopRequireDefault(_Bar);
 
-var _HorizontalBar = __webpack_require__(436);
+var _HorizontalBar = __webpack_require__(437);
 
 var _HorizontalBar2 = _interopRequireDefault(_HorizontalBar);
 
-var _Doughnut = __webpack_require__(435);
+var _Doughnut = __webpack_require__(436);
 
 var _Doughnut2 = _interopRequireDefault(_Doughnut);
 
-var _Line = __webpack_require__(437);
+var _Line = __webpack_require__(438);
 
 var _Line2 = _interopRequireDefault(_Line);
 
-var _Pie = __webpack_require__(438);
+var _Pie = __webpack_require__(439);
 
 var _Pie2 = _interopRequireDefault(_Pie);
 
-var _PolarArea = __webpack_require__(439);
+var _PolarArea = __webpack_require__(440);
 
 var _PolarArea2 = _interopRequireDefault(_PolarArea);
 
-var _Radar = __webpack_require__(440);
+var _Radar = __webpack_require__(441);
 
 var _Radar2 = _interopRequireDefault(_Radar);
 
-var _Bubble = __webpack_require__(434);
+var _Bubble = __webpack_require__(435);
 
 var _Bubble2 = _interopRequireDefault(_Bubble);
 
-var _index = __webpack_require__(441);
+var _index = __webpack_require__(442);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _package = __webpack_require__(444);
+var _package = __webpack_require__(445);
 
 var _package2 = _interopRequireDefault(_package);
 
@@ -29364,9 +29364,9 @@ window.Vue = __webpack_require__(5);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('post', __webpack_require__(446));
+Vue.component('post', __webpack_require__(447));
 
-Vue.component('charts', __webpack_require__(445));
+Vue.component('charts', __webpack_require__(446));
 
 var app = new Vue({
   el: '#app'
@@ -30225,13 +30225,13 @@ module.exports = function spread(callback) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_BarChart__ = __webpack_require__(447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_BarChart__ = __webpack_require__(448);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_BarChart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__charts_BarChart__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__charts_LineChart__ = __webpack_require__(448);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__charts_LineChart__ = __webpack_require__(449);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__charts_LineChart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__charts_LineChart__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__charts_PieChart__ = __webpack_require__(449);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__charts_PieChart__ = __webpack_require__(450);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__charts_PieChart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__charts_PieChart__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__charts_RadarChart__ = __webpack_require__(450);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__charts_RadarChart__ = __webpack_require__(451);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__charts_RadarChart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__charts_RadarChart__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Inter__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Inter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Inter__);
@@ -30256,9 +30256,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 
 
@@ -30266,82 +30263,75 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-/*import Echo from 'laravel-echo';
- window.Pusher = require('pusher-js')*/
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
-  components: { BarChart: __WEBPACK_IMPORTED_MODULE_0__charts_BarChart___default.a, LineChart: __WEBPACK_IMPORTED_MODULE_1__charts_LineChart___default.a, PieChart: __WEBPACK_IMPORTED_MODULE_2__charts_PieChart___default.a, RadarChart: __WEBPACK_IMPORTED_MODULE_3__charts_RadarChart___default.a },
-
-  mounted: function mounted() {
-    //	this.fetchData();
-  },
-  data: function data() {
-    return {
-      status: false,
-      data: {
-        labels: ['a', 'b', 'c'],
-        datasets: [{
-          label: 'GitHub Commits',
-          backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe'],
-          data: [40, 20, 52]
-        }]
-      }
-    };
-  },
-
-
-  methods: {
-    update: function update() {
-      var values = [30, 25, 52];
-      __WEBPACK_IMPORTED_MODULE_4__Inter__["inter"].$emit('updateChartEvent', values);
+    components: {
+        BarChart: __WEBPACK_IMPORTED_MODULE_0__charts_BarChart___default.a, LineChart: __WEBPACK_IMPORTED_MODULE_1__charts_LineChart___default.a, PieChart: __WEBPACK_IMPORTED_MODULE_2__charts_PieChart___default.a, RadarChart: __WEBPACK_IMPORTED_MODULE_3__charts_RadarChart___default.a
     },
-    fetchData: function fetchData() {
-      var self = this;
 
-      console.log(self.data);
+    mounted: function mounted() {},
+    data: function data() {
+        return {
+            status: false,
+            data: {
+                labels: ['a', 'b', 'c'],
+                datasets: [{
+                    label: 'GitHub Commits',
+                    backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe'],
+                    data: [40, 20, 52]
+                }]
+            }
+        };
+    },
 
-      axios.get('userposts').then(function (response) {
 
-        var names = response.data.map(function (item) {
-          return item.name;
+    methods: {
+        fetchData: function fetchData() {
+            var self = this;
+
+            console.log(self.data);
+
+            axios.get('userposts').then(function (response) {
+
+                var names = response.data.map(function (item) {
+                    return item.name;
+                });
+
+                var votes = response.data.map(function (item) {
+                    return item.votes;
+                });
+
+                self.data.labels = names;
+                self.data.datasets[0].label = "top users";
+                self.data.datasets[0].backgroundColor = ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)'];
+                self.data.datasets[0].borderColor = ['rgba(255,99,132,1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)'];
+                self.data.datasets[0].borderWidth = 2;
+                self.data.datasets[0].fill = false;
+                self.data.datasets[0].data = votes;
+
+                self.status = true;
+            }).catch(function (response) {
+                console.log(response);
+            });
+        }
+    },
+
+    created: function created() {
+        this.fetchData();
+
+        Echo.private('charts').listen('ChartEvent', function (e) {
+            console.log(e);
+
+            var votes = e.userPosts.map(function (item) {
+                return item.votes;
+            });
+
+            console.log(votes);
+
+            __WEBPACK_IMPORTED_MODULE_4__Inter__["inter"].$emit('updateChartEvent', votes);
         });
-
-        var votes = response.data.map(function (item) {
-          return item.votes;
-        });
-
-        self.data.labels = names;
-        self.data.datasets[0].label = "top users";
-        self.data.datasets[0].backgroundColor = ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)'];
-        self.data.datasets[0].borderColor = ['rgba(255,99,132,1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)'];
-        self.data.datasets[0].borderWidth = 2;
-        self.data.datasets[0].fill = false;
-        self.data.datasets[0].data = votes;
-
-        self.status = true;
-      }).catch(function (response) {
-        console.log(response);
-      });
     }
-  },
-
-  created: function created() {
-    this.fetchData();
-
-    Echo.private('charts').listen('ChartEvent', function (e) {
-      console.log(e);
-
-      var votes = e.userPosts.map(function (item) {
-        return item.votes;
-      });
-
-      console.log(votes);
-
-      __WEBPACK_IMPORTED_MODULE_4__Inter__["inter"].$emit('updateChartEvent', votes);
-    });
-  }
 });
 
 /***/ }),
@@ -30416,8 +30406,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["Bar"].extend({
-
-	//  mixins: [mixins.reactiveProp],
 
 	props: ['data', 'options'],
 
@@ -30588,7 +30576,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
 
-window.Pusher = __webpack_require__(462);
+window.Pusher = __webpack_require__(433);
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   broadcaster: 'pusher',
@@ -79369,1325 +79357,6 @@ process.umask = function() { return 0; };
 /* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _chart = __webpack_require__(6);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _options = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _vue2.default.extend({
-  render: function render(createElement) {
-    return createElement('div', [createElement('canvas', {
-      attrs: {
-        id: this.chartId,
-        width: this.width,
-        height: this.height
-      },
-      ref: 'canvas'
-    })]);
-  },
-
-  props: {
-    chartId: {
-      default: 'bar-chart',
-      type: String
-    },
-    width: {
-      default: 400,
-      type: Number
-    },
-    height: {
-      default: 400,
-      type: Number
-    }
-  },
-
-  data: function data() {
-    return {
-      defaultOptions: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            },
-            gridLines: {
-              display: false
-            }
-          }],
-          xAxes: [{
-            gridLines: {
-              display: false
-            },
-            categoryPercentage: 0.5,
-            barPercentage: 0.2
-          }]
-        }
-      }
-    };
-  },
-
-
-  methods: {
-    renderChart: function renderChart(data, options) {
-      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
-      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
-        type: 'bar',
-        data: data,
-        options: chartOptions
-      });
-      this._chart.generateLegend();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this._chart.destroy();
-  }
-});
-
-/***/ }),
-/* 434 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _chart = __webpack_require__(6);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _options = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _vue2.default.extend({
-  render: function render(createElement) {
-    return createElement('div', [createElement('canvas', {
-      attrs: {
-        id: this.chartId,
-        width: this.width,
-        height: this.height
-      },
-      ref: 'canvas'
-    })]);
-  },
-
-  props: {
-    chartId: {
-      default: 'bubble-chart',
-      type: String
-    },
-    width: {
-      default: 400,
-      type: Number
-    },
-    height: {
-      default: 400,
-      type: Number
-    }
-  },
-
-  data: function data() {
-    return {
-      defaultOptions: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            },
-            gridLines: {
-              display: false
-            }
-          }],
-          xAxes: [{
-            gridLines: {
-              display: false
-            },
-            categoryPercentage: 0.5,
-            barPercentage: 0.2
-          }]
-        }
-      }
-    };
-  },
-
-
-  methods: {
-    renderChart: function renderChart(data, options) {
-      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
-
-      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
-        type: 'bubble',
-        data: data,
-        options: chartOptions
-      });
-      this._chart.generateLegend();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this._chart.destroy();
-  }
-});
-
-/***/ }),
-/* 435 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _chart = __webpack_require__(6);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _options = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _vue2.default.extend({
-  render: function render(createElement) {
-    return createElement('div', [createElement('canvas', {
-      attrs: {
-        id: this.chartId,
-        width: this.width,
-        height: this.height
-      },
-      ref: 'canvas'
-    })]);
-  },
-
-  props: {
-    chartId: {
-      default: 'doughnut-chart',
-      type: String
-    },
-    width: {
-      default: 400,
-      type: Number
-    },
-    height: {
-      default: 400,
-      type: Number
-    }
-  },
-
-  data: function data() {
-    return {
-      defaultOptions: {}
-    };
-  },
-
-
-  methods: {
-    renderChart: function renderChart(data, options) {
-      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
-
-      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
-        type: 'doughnut',
-        data: data,
-        options: chartOptions
-      });
-      this._chart.generateLegend();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this._chart.destroy();
-  }
-});
-
-/***/ }),
-/* 436 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _chart = __webpack_require__(6);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _options = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _vue2.default.extend({
-  render: function render(createElement) {
-    return createElement('div', [createElement('canvas', {
-      attrs: {
-        id: this.chartId,
-        width: this.width,
-        height: this.height
-      },
-      ref: 'canvas'
-    })]);
-  },
-
-  props: {
-    chartId: {
-      default: 'horizontalbar-chart',
-      type: String
-    },
-    width: {
-      default: 400,
-      type: Number
-    },
-    height: {
-      default: 400,
-      type: Number
-    }
-  },
-
-  data: function data() {
-    return {
-      defaultOptions: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            },
-            gridLines: {
-              display: false
-            }
-          }],
-          xAxes: [{
-            gridLines: {
-              display: false
-            },
-            categoryPercentage: 0.5,
-            barPercentage: 0.2
-          }]
-        }
-      }
-    };
-  },
-
-
-  methods: {
-    renderChart: function renderChart(data, options, type) {
-      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
-      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
-        type: 'horizontalBar',
-        data: data,
-        options: chartOptions
-      });
-      this._chart.generateLegend();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this._chart.destroy();
-  }
-});
-
-/***/ }),
-/* 437 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _chart = __webpack_require__(6);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _options = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _vue2.default.extend({
-  render: function render(createElement) {
-    return createElement('div', [createElement('canvas', {
-      attrs: {
-        id: this.chartId,
-        width: this.width,
-        height: this.height
-      },
-      ref: 'canvas'
-    })]);
-  },
-
-  props: {
-    chartId: {
-      default: 'line-chart',
-      type: String
-    },
-    width: {
-      default: 400,
-      type: Number
-    },
-    height: {
-      default: 400,
-      type: Number
-    }
-  },
-
-  data: function data() {
-    return {
-      defaultOptions: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            },
-            gridLines: {
-              display: false
-            }
-          }],
-          xAxes: [{
-            gridLines: {
-              display: false
-            }
-          }]
-        }
-      }
-    };
-  },
-
-
-  methods: {
-    renderChart: function renderChart(data, options) {
-      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
-
-      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
-        type: 'line',
-        data: data,
-        options: chartOptions
-      });
-      this._chart.generateLegend();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this._chart.destroy();
-  }
-});
-
-/***/ }),
-/* 438 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _chart = __webpack_require__(6);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _options = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _vue2.default.extend({
-  render: function render(createElement) {
-    return createElement('div', [createElement('canvas', {
-      attrs: {
-        id: this.chartId,
-        width: this.width,
-        height: this.height
-      },
-      ref: 'canvas'
-    })]);
-  },
-
-  props: {
-    chartId: {
-      default: 'pie-chart',
-      type: String
-    },
-    width: {
-      default: 400,
-      type: Number
-    },
-    height: {
-      default: 400,
-      type: Number
-    }
-  },
-
-  data: function data() {
-    return {
-      defaultOptions: {}
-    };
-  },
-
-
-  methods: {
-    renderChart: function renderChart(data, options) {
-      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
-
-      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
-        type: 'pie',
-        data: data,
-        options: chartOptions
-      });
-      this._chart.generateLegend();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this._chart.destroy();
-  }
-});
-
-/***/ }),
-/* 439 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _chart = __webpack_require__(6);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _options = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _vue2.default.extend({
-  render: function render(createElement) {
-    return createElement('div', [createElement('canvas', {
-      attrs: {
-        id: this.chartId,
-        width: this.width,
-        height: this.height
-      },
-      ref: 'canvas'
-    })]);
-  },
-
-  props: {
-    chartId: {
-      default: 'polar-chart',
-      type: String
-    },
-    width: {
-      default: 400,
-      type: Number
-    },
-    height: {
-      default: 400,
-      type: Number
-    }
-  },
-
-  data: function data() {
-    return {
-      defaultOptions: {}
-    };
-  },
-
-
-  methods: {
-    renderChart: function renderChart(data, options) {
-      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
-
-      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
-        type: 'polarArea',
-        data: data,
-        options: chartOptions
-      });
-      this._chart.generateLegend();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this._chart.destroy();
-  }
-});
-
-/***/ }),
-/* 440 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _chart = __webpack_require__(6);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _options = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _vue2.default.extend({
-  render: function render(createElement) {
-    return createElement('div', [createElement('canvas', {
-      attrs: {
-        id: this.chartId,
-        width: this.width,
-        height: this.height
-      },
-      ref: 'canvas'
-    })]);
-  },
-
-  props: {
-    chartId: {
-      default: 'radar-chart',
-      type: String
-    },
-    width: {
-      default: 400,
-      type: Number
-    },
-    height: {
-      default: 400,
-      type: Number
-    }
-  },
-
-  data: function data() {
-    return {
-      defaultOptions: {}
-    };
-  },
-
-
-  methods: {
-    renderChart: function renderChart(data, options) {
-      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
-
-      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
-        type: 'radar',
-        data: data,
-        options: chartOptions
-      });
-      this._chart.generateLegend();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this._chart.destroy();
-  }
-});
-
-/***/ }),
-/* 441 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _reactiveData = __webpack_require__(442);
-
-var _reactiveData2 = _interopRequireDefault(_reactiveData);
-
-var _reactiveProp = __webpack_require__(443);
-
-var _reactiveProp2 = _interopRequireDefault(_reactiveProp);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-  reactiveData: _reactiveData2.default,
-  reactiveProp: _reactiveProp2.default
-};
-
-/***/ }),
-/* 442 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _stringify = __webpack_require__(61);
-
-var _stringify2 = _interopRequireDefault(_stringify);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = {
-  data: function data() {
-    return {
-      chartData: null
-    };
-  },
-
-  watch: {
-    'chartData': {
-      handler: function handler(newData, oldData) {
-        if (oldData) {
-          var chart = this._chart;
-
-          var newDatasetLabels = newData.datasets.map(function (dataset) {
-            return dataset.label;
-          });
-
-          var oldDatasetLabels = oldData.datasets.map(function (dataset) {
-            return dataset.label;
-          });
-
-          var oldLabels = (0, _stringify2.default)(oldDatasetLabels);
-          var newLabels = (0, _stringify2.default)(newDatasetLabels);
-
-          if (newLabels === oldLabels && oldData.datasets.length === newData.datasets.length) {
-            newData.datasets.forEach(function (dataset, i) {
-              chart.data.datasets[i] = dataset;
-            });
-
-            chart.data.labels = newData.labels;
-            chart.update();
-          } else {
-            chart.destroy();
-            this.renderChart(this.chartData, this.options);
-          }
-        }
-      }
-    }
-  }
-};
-
-/***/ }),
-/* 443 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _stringify = __webpack_require__(61);
-
-var _stringify2 = _interopRequireDefault(_stringify);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = {
-  props: {
-    chartData: {
-      required: true
-    }
-  },
-
-  watch: {
-    'chartData': {
-      handler: function handler(newData, oldData) {
-        if (oldData) {
-          var chart = this._chart;
-
-          var newDatasetLabels = newData.datasets.map(function (dataset) {
-            return dataset.label;
-          });
-
-          var oldDatasetLabels = oldData.datasets.map(function (dataset) {
-            return dataset.label;
-          });
-
-          var oldLabels = (0, _stringify2.default)(oldDatasetLabels);
-          var newLabels = (0, _stringify2.default)(newDatasetLabels);
-
-          if (newLabels === oldLabels && oldData.datasets.length === newData.datasets.length) {
-            newData.datasets.forEach(function (dataset, i) {
-              chart.data.datasets[i] = dataset;
-            });
-
-            chart.data.labels = newData.labels;
-            chart.update();
-          } else {
-            chart.destroy();
-            this.renderChart(this.chartData, this.options);
-          }
-        }
-      }
-    }
-  }
-};
-
-/***/ }),
-/* 444 */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"_args": [
-		[
-			{
-				"raw": "vue-chartjs",
-				"scope": null,
-				"escapedName": "vue-chartjs",
-				"name": "vue-chartjs",
-				"rawSpec": "",
-				"spec": "latest",
-				"type": "tag"
-			},
-			"/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime"
-		]
-	],
-	"_from": "vue-chartjs@latest",
-	"_id": "vue-chartjs@2.6.2",
-	"_inCache": true,
-	"_location": "/vue-chartjs",
-	"_nodeVersion": "7.9.0",
-	"_npmOperationalInternal": {
-		"host": "packages-18-east.internal.npmjs.com",
-		"tmp": "tmp/vue-chartjs-2.6.2.tgz_1493472545564_0.4451814501080662"
-	},
-	"_npmUser": {
-		"name": "apertureless",
-		"email": "juszczak.j@googlemail.com"
-	},
-	"_npmVersion": "4.5.0",
-	"_phantomChildren": {},
-	"_requested": {
-		"raw": "vue-chartjs",
-		"scope": null,
-		"escapedName": "vue-chartjs",
-		"name": "vue-chartjs",
-		"rawSpec": "",
-		"spec": "latest",
-		"type": "tag"
-	},
-	"_requiredBy": [
-		"#USER",
-		"/"
-	],
-	"_resolved": "https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-2.6.2.tgz",
-	"_shasum": "f0fe61892494325db8e2462cb0397b948b4434f4",
-	"_shrinkwrap": null,
-	"_spec": "vue-chartjs",
-	"_where": "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime",
-	"author": {
-		"name": "Jakub Juszczak",
-		"email": "jakub@posteo.de"
-	},
-	"babel": {
-		"presets": [
-			"es2015"
-		]
-	},
-	"browserify": {
-		"transform": [
-			"babelify"
-		]
-	},
-	"bugs": {
-		"url": "https://github.com/apertureless/vue-chartjs/issues"
-	},
-	"contributors": [
-		{
-			"name": "Thorsten Lünborg",
-			"url": "https://github.com/LinusBorg"
-		},
-		{
-			"name": "Juan Carlos Alonso",
-			"url": "https://github.com/jcalonso"
-		}
-	],
-	"dependencies": {
-		"lodash": "^4.17.4"
-	},
-	"description": "vue.js wrapper for chart.js",
-	"devDependencies": {
-		"babel-cli": "^6.24.1",
-		"babel-core": "^6.24.1",
-		"babel-loader": "^7.0.0",
-		"babel-plugin-transform-runtime": "^6.23.0",
-		"babel-preset-es2015": "^6.24.1",
-		"babel-preset-stage-2": "^6.24.1",
-		"babel-runtime": "^6.23.0",
-		"chai": "^3.5.0",
-		"chart.js": "^2.5.0",
-		"chromedriver": "^2.28.0",
-		"connect-history-api-fallback": "^1.1.0",
-		"cross-env": "^3.2.4",
-		"cross-spawn": "^5.1.0",
-		"css-loader": "^0.28.0",
-		"eslint": "^3.19.0",
-		"eslint-config-standard": "^10.2.1",
-		"eslint-friendly-formatter": "^2.0.7",
-		"eslint-loader": "^1.7.1",
-		"eslint-plugin-html": "^2.0.1",
-		"eslint-plugin-import": "^2.2.0",
-		"eslint-plugin-node": "^4.2.2",
-		"eslint-plugin-promise": "^3.5.0",
-		"eslint-plugin-standard": "^3.0.1",
-		"eventsource-polyfill": "^0.9.6",
-		"express": "^4.15.2",
-		"extract-text-webpack-plugin": "^1.0.1",
-		"file-loader": "^0.10.1",
-		"function-bind": "^1.0.2",
-		"html-webpack-plugin": "^2.28.0",
-		"http-proxy-middleware": "^0.17.4",
-		"inject-loader": "^3.0.0",
-		"isparta-loader": "^2.0.0",
-		"jasmine-core": "^2.5.2",
-		"json-loader": "^0.5.4",
-		"karma": "^1.5.0",
-		"karma-coverage": "^1.1.1",
-		"karma-jasmine": "^1.0.2",
-		"karma-mocha": "^1.2.0",
-		"karma-phantomjs-launcher": "^1.0.4",
-		"karma-sinon-chai": "^1.2.0",
-		"karma-sourcemap-loader": "^0.3.7",
-		"karma-spec-reporter": "0.0.30",
-		"karma-webpack": "1.8.1",
-		"lolex": "^1.6.0",
-		"mocha": "^3.1.0",
-		"nightwatch": "^0.9.14",
-		"ora": "^1.2.0",
-		"phantomjs-prebuilt": "^2.1.13",
-		"selenium-server": "^3.3.1",
-		"shelljs": "^0.7.7",
-		"sinon": "^2.1.0",
-		"sinon-chai": "^2.9.0",
-		"url-loader": "^0.5.8",
-		"vue": "^2.3.0",
-		"vue-hot-reload-api": "^2.1.0",
-		"vue-html-loader": "^1.2.4",
-		"vue-loader": "^12.0.2",
-		"vue-style-loader": "^3.0.1",
-		"vue-template-compiler": "^2.3.0",
-		"webpack": "^1.13.2",
-		"webpack-dev-middleware": "^1.10.1",
-		"webpack-hot-middleware": "^2.17.1",
-		"webpack-merge": "1.1.1"
-	},
-	"directories": {},
-	"dist": {
-		"shasum": "f0fe61892494325db8e2462cb0397b948b4434f4",
-		"tarball": "https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-2.6.2.tgz"
-	},
-	"engines": {
-		"node": ">=6.9.0"
-	},
-	"files": [
-		"src",
-		"dist",
-		"es"
-	],
-	"gitHead": "25d37666877d4e472c00b5a056c135efe43ee693",
-	"greenkeeper": {
-		"ignore": [
-			"extract-text-webpack-plugin",
-			"karma-webpack",
-			"webpack",
-			"webpack-merge"
-		]
-	},
-	"homepage": "http://vue-chartjs.org",
-	"jsnext:main": "es/index.js",
-	"keywords": [
-		"ChartJs",
-		"Vue",
-		"Visualisation",
-		"Wrapper",
-		"Charts"
-	],
-	"license": "MIT",
-	"main": "dist/vue-chartjs.js",
-	"maintainers": [
-		{
-			"name": "apertureless",
-			"email": "netghost03@gmail.com"
-		}
-	],
-	"module": "es/index.js",
-	"name": "vue-chartjs",
-	"optionalDependencies": {},
-	"peerDependencies": {
-		"chart.js": "^2.5.0",
-		"vue": "^2.3.0"
-	},
-	"readme": "ERROR: No README data found!",
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/apertureless/vue-chartjs.git"
-	},
-	"scripts": {
-		"build": "yarn run release && yarn run build:es",
-		"build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
-		"dev": "node build/dev-server.js",
-		"e2e": "node test/e2e/runner.js",
-		"lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-		"prepublish": "yarn run lint && yarn run test && yarn run build",
-		"release": "webpack --progress --hide-modules --config  ./build/webpack.release.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js && webpack --progress --hide-modules --config  ./build/webpack.release.full.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.full.min.js",
-		"test": "npm run unit",
-		"unit": "karma start test/unit/karma.conf.js --single-run"
-	},
-	"unpkg": "dist/vue-chartjs.full.min.js",
-	"version": "2.6.2"
-};
-
-/***/ }),
-/* 445 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(10)(
-  /* script */
-  __webpack_require__(244),
-  /* template */
-  __webpack_require__(451),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/Charts.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Charts.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-39b0bb98", Component.options)
-  } else {
-    hotAPI.reload("data-v-39b0bb98", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 446 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(10)(
-  /* script */
-  __webpack_require__(246),
-  /* template */
-  __webpack_require__(452),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/Post.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Post.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-dc123dba", Component.options)
-  } else {
-    hotAPI.reload("data-v-dc123dba", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 447 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(10)(
-  /* script */
-  __webpack_require__(247),
-  /* template */
-  null,
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/charts/BarChart.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0cc4c992", Component.options)
-  } else {
-    hotAPI.reload("data-v-0cc4c992", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 448 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(10)(
-  /* script */
-  __webpack_require__(248),
-  /* template */
-  null,
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/charts/LineChart.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1ef856d3", Component.options)
-  } else {
-    hotAPI.reload("data-v-1ef856d3", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 449 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(10)(
-  /* script */
-  __webpack_require__(249),
-  /* template */
-  null,
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/charts/PieChart.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-9032a78e", Component.options)
-  } else {
-    hotAPI.reload("data-v-9032a78e", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 450 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(10)(
-  /* script */
-  __webpack_require__(250),
-  /* template */
-  null,
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/charts/RadarChart.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-93205782", Component.options)
-  } else {
-    hotAPI.reload("data-v-93205782", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 451 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.status === true) ? _c('div', [_c('div', [_c('button', {
-    staticClass: "btn btn-info",
-    on: {
-      "click": function($event) {
-        _vm.update()
-      }
-    }
-  }, [_vm._v("Update")])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-6"
-  }, [_c('bar-chart', {
-    attrs: {
-      "data": _vm.data,
-      "options": {
-        responsive: true,
-        maintainAspectRatio: false
-      }
-    }
-  })], 1), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('line-chart', {
-    attrs: {
-      "data": _vm.data,
-      "options": {
-        responsive: true,
-        maintainAspectRatio: false
-      }
-    }
-  })], 1)]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-6"
-  }, [_c('pie-chart', {
-    attrs: {
-      "data": _vm.data,
-      "options": {
-        responsive: true,
-        maintainAspectRatio: false
-      }
-    }
-  })], 1), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('radar-chart', {
-    attrs: {
-      "data": _vm.data,
-      "options": {
-        responsive: true,
-        maintainAspectRatio: false
-      }
-    }
-  })], 1)])]) : _vm._e()
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-39b0bb98", module.exports)
-  }
-}
-
-/***/ }),
-/* 452 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "panel-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    on: {
-      "click": function($event) {
-        _vm.vote(_vm.id)
-      }
-    }
-  }, [_vm._v("\n        Votar\n    ")]), _vm._v(" "), _c('span', {
-    staticClass: "badge",
-    staticStyle: {
-      "float": "right"
-    }
-  }, [_vm._v(_vm._s(_vm.isVotes))])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-dc123dba", module.exports)
-  }
-}
-
-/***/ }),
-/* 453 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(224);
-module.exports = __webpack_require__(225);
-
-
-/***/ }),
-/* 454 */,
-/* 455 */,
-/* 456 */,
-/* 457 */,
-/* 458 */,
-/* 459 */,
-/* 460 */,
-/* 461 */,
-/* 462 */
-/***/ (function(module, exports, __webpack_require__) {
-
 /*!
  * Pusher JavaScript Library v4.1.0
  * https://pusher.com/
@@ -84821,6 +83490,1310 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ ])
 });
 ;
+
+/***/ }),
+/* 434 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _chart = __webpack_require__(6);
+
+var _chart2 = _interopRequireDefault(_chart);
+
+var _options = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _vue2.default.extend({
+  render: function render(createElement) {
+    return createElement('div', [createElement('canvas', {
+      attrs: {
+        id: this.chartId,
+        width: this.width,
+        height: this.height
+      },
+      ref: 'canvas'
+    })]);
+  },
+
+  props: {
+    chartId: {
+      default: 'bar-chart',
+      type: String
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    }
+  },
+
+  data: function data() {
+    return {
+      defaultOptions: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            gridLines: {
+              display: false
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              display: false
+            },
+            categoryPercentage: 0.5,
+            barPercentage: 0.2
+          }]
+        }
+      }
+    };
+  },
+
+
+  methods: {
+    renderChart: function renderChart(data, options) {
+      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
+      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
+        type: 'bar',
+        data: data,
+        options: chartOptions
+      });
+      this._chart.generateLegend();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    this._chart.destroy();
+  }
+});
+
+/***/ }),
+/* 435 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _chart = __webpack_require__(6);
+
+var _chart2 = _interopRequireDefault(_chart);
+
+var _options = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _vue2.default.extend({
+  render: function render(createElement) {
+    return createElement('div', [createElement('canvas', {
+      attrs: {
+        id: this.chartId,
+        width: this.width,
+        height: this.height
+      },
+      ref: 'canvas'
+    })]);
+  },
+
+  props: {
+    chartId: {
+      default: 'bubble-chart',
+      type: String
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    }
+  },
+
+  data: function data() {
+    return {
+      defaultOptions: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            gridLines: {
+              display: false
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              display: false
+            },
+            categoryPercentage: 0.5,
+            barPercentage: 0.2
+          }]
+        }
+      }
+    };
+  },
+
+
+  methods: {
+    renderChart: function renderChart(data, options) {
+      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
+
+      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
+        type: 'bubble',
+        data: data,
+        options: chartOptions
+      });
+      this._chart.generateLegend();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    this._chart.destroy();
+  }
+});
+
+/***/ }),
+/* 436 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _chart = __webpack_require__(6);
+
+var _chart2 = _interopRequireDefault(_chart);
+
+var _options = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _vue2.default.extend({
+  render: function render(createElement) {
+    return createElement('div', [createElement('canvas', {
+      attrs: {
+        id: this.chartId,
+        width: this.width,
+        height: this.height
+      },
+      ref: 'canvas'
+    })]);
+  },
+
+  props: {
+    chartId: {
+      default: 'doughnut-chart',
+      type: String
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    }
+  },
+
+  data: function data() {
+    return {
+      defaultOptions: {}
+    };
+  },
+
+
+  methods: {
+    renderChart: function renderChart(data, options) {
+      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
+
+      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
+        type: 'doughnut',
+        data: data,
+        options: chartOptions
+      });
+      this._chart.generateLegend();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    this._chart.destroy();
+  }
+});
+
+/***/ }),
+/* 437 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _chart = __webpack_require__(6);
+
+var _chart2 = _interopRequireDefault(_chart);
+
+var _options = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _vue2.default.extend({
+  render: function render(createElement) {
+    return createElement('div', [createElement('canvas', {
+      attrs: {
+        id: this.chartId,
+        width: this.width,
+        height: this.height
+      },
+      ref: 'canvas'
+    })]);
+  },
+
+  props: {
+    chartId: {
+      default: 'horizontalbar-chart',
+      type: String
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    }
+  },
+
+  data: function data() {
+    return {
+      defaultOptions: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            gridLines: {
+              display: false
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              display: false
+            },
+            categoryPercentage: 0.5,
+            barPercentage: 0.2
+          }]
+        }
+      }
+    };
+  },
+
+
+  methods: {
+    renderChart: function renderChart(data, options, type) {
+      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
+      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
+        type: 'horizontalBar',
+        data: data,
+        options: chartOptions
+      });
+      this._chart.generateLegend();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    this._chart.destroy();
+  }
+});
+
+/***/ }),
+/* 438 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _chart = __webpack_require__(6);
+
+var _chart2 = _interopRequireDefault(_chart);
+
+var _options = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _vue2.default.extend({
+  render: function render(createElement) {
+    return createElement('div', [createElement('canvas', {
+      attrs: {
+        id: this.chartId,
+        width: this.width,
+        height: this.height
+      },
+      ref: 'canvas'
+    })]);
+  },
+
+  props: {
+    chartId: {
+      default: 'line-chart',
+      type: String
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    }
+  },
+
+  data: function data() {
+    return {
+      defaultOptions: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            gridLines: {
+              display: false
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              display: false
+            }
+          }]
+        }
+      }
+    };
+  },
+
+
+  methods: {
+    renderChart: function renderChart(data, options) {
+      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
+
+      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
+        type: 'line',
+        data: data,
+        options: chartOptions
+      });
+      this._chart.generateLegend();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    this._chart.destroy();
+  }
+});
+
+/***/ }),
+/* 439 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _chart = __webpack_require__(6);
+
+var _chart2 = _interopRequireDefault(_chart);
+
+var _options = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _vue2.default.extend({
+  render: function render(createElement) {
+    return createElement('div', [createElement('canvas', {
+      attrs: {
+        id: this.chartId,
+        width: this.width,
+        height: this.height
+      },
+      ref: 'canvas'
+    })]);
+  },
+
+  props: {
+    chartId: {
+      default: 'pie-chart',
+      type: String
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    }
+  },
+
+  data: function data() {
+    return {
+      defaultOptions: {}
+    };
+  },
+
+
+  methods: {
+    renderChart: function renderChart(data, options) {
+      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
+
+      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
+        type: 'pie',
+        data: data,
+        options: chartOptions
+      });
+      this._chart.generateLegend();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    this._chart.destroy();
+  }
+});
+
+/***/ }),
+/* 440 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _chart = __webpack_require__(6);
+
+var _chart2 = _interopRequireDefault(_chart);
+
+var _options = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _vue2.default.extend({
+  render: function render(createElement) {
+    return createElement('div', [createElement('canvas', {
+      attrs: {
+        id: this.chartId,
+        width: this.width,
+        height: this.height
+      },
+      ref: 'canvas'
+    })]);
+  },
+
+  props: {
+    chartId: {
+      default: 'polar-chart',
+      type: String
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    }
+  },
+
+  data: function data() {
+    return {
+      defaultOptions: {}
+    };
+  },
+
+
+  methods: {
+    renderChart: function renderChart(data, options) {
+      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
+
+      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
+        type: 'polarArea',
+        data: data,
+        options: chartOptions
+      });
+      this._chart.generateLegend();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    this._chart.destroy();
+  }
+});
+
+/***/ }),
+/* 441 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _chart = __webpack_require__(6);
+
+var _chart2 = _interopRequireDefault(_chart);
+
+var _options = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _vue2.default.extend({
+  render: function render(createElement) {
+    return createElement('div', [createElement('canvas', {
+      attrs: {
+        id: this.chartId,
+        width: this.width,
+        height: this.height
+      },
+      ref: 'canvas'
+    })]);
+  },
+
+  props: {
+    chartId: {
+      default: 'radar-chart',
+      type: String
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    }
+  },
+
+  data: function data() {
+    return {
+      defaultOptions: {}
+    };
+  },
+
+
+  methods: {
+    renderChart: function renderChart(data, options) {
+      var chartOptions = (0, _options.mergeOptions)(this.defaultOptions, options);
+
+      this._chart = new _chart2.default(this.$refs.canvas.getContext('2d'), {
+        type: 'radar',
+        data: data,
+        options: chartOptions
+      });
+      this._chart.generateLegend();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    this._chart.destroy();
+  }
+});
+
+/***/ }),
+/* 442 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _reactiveData = __webpack_require__(443);
+
+var _reactiveData2 = _interopRequireDefault(_reactiveData);
+
+var _reactiveProp = __webpack_require__(444);
+
+var _reactiveProp2 = _interopRequireDefault(_reactiveProp);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  reactiveData: _reactiveData2.default,
+  reactiveProp: _reactiveProp2.default
+};
+
+/***/ }),
+/* 443 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _stringify = __webpack_require__(61);
+
+var _stringify2 = _interopRequireDefault(_stringify);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = {
+  data: function data() {
+    return {
+      chartData: null
+    };
+  },
+
+  watch: {
+    'chartData': {
+      handler: function handler(newData, oldData) {
+        if (oldData) {
+          var chart = this._chart;
+
+          var newDatasetLabels = newData.datasets.map(function (dataset) {
+            return dataset.label;
+          });
+
+          var oldDatasetLabels = oldData.datasets.map(function (dataset) {
+            return dataset.label;
+          });
+
+          var oldLabels = (0, _stringify2.default)(oldDatasetLabels);
+          var newLabels = (0, _stringify2.default)(newDatasetLabels);
+
+          if (newLabels === oldLabels && oldData.datasets.length === newData.datasets.length) {
+            newData.datasets.forEach(function (dataset, i) {
+              chart.data.datasets[i] = dataset;
+            });
+
+            chart.data.labels = newData.labels;
+            chart.update();
+          } else {
+            chart.destroy();
+            this.renderChart(this.chartData, this.options);
+          }
+        }
+      }
+    }
+  }
+};
+
+/***/ }),
+/* 444 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _stringify = __webpack_require__(61);
+
+var _stringify2 = _interopRequireDefault(_stringify);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = {
+  props: {
+    chartData: {
+      required: true
+    }
+  },
+
+  watch: {
+    'chartData': {
+      handler: function handler(newData, oldData) {
+        if (oldData) {
+          var chart = this._chart;
+
+          var newDatasetLabels = newData.datasets.map(function (dataset) {
+            return dataset.label;
+          });
+
+          var oldDatasetLabels = oldData.datasets.map(function (dataset) {
+            return dataset.label;
+          });
+
+          var oldLabels = (0, _stringify2.default)(oldDatasetLabels);
+          var newLabels = (0, _stringify2.default)(newDatasetLabels);
+
+          if (newLabels === oldLabels && oldData.datasets.length === newData.datasets.length) {
+            newData.datasets.forEach(function (dataset, i) {
+              chart.data.datasets[i] = dataset;
+            });
+
+            chart.data.labels = newData.labels;
+            chart.update();
+          } else {
+            chart.destroy();
+            this.renderChart(this.chartData, this.options);
+          }
+        }
+      }
+    }
+  }
+};
+
+/***/ }),
+/* 445 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"_args": [
+		[
+			{
+				"raw": "vue-chartjs",
+				"scope": null,
+				"escapedName": "vue-chartjs",
+				"name": "vue-chartjs",
+				"rawSpec": "",
+				"spec": "latest",
+				"type": "tag"
+			},
+			"/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime"
+		]
+	],
+	"_from": "vue-chartjs@latest",
+	"_id": "vue-chartjs@2.6.2",
+	"_inCache": true,
+	"_location": "/vue-chartjs",
+	"_nodeVersion": "7.9.0",
+	"_npmOperationalInternal": {
+		"host": "packages-18-east.internal.npmjs.com",
+		"tmp": "tmp/vue-chartjs-2.6.2.tgz_1493472545564_0.4451814501080662"
+	},
+	"_npmUser": {
+		"name": "apertureless",
+		"email": "juszczak.j@googlemail.com"
+	},
+	"_npmVersion": "4.5.0",
+	"_phantomChildren": {},
+	"_requested": {
+		"raw": "vue-chartjs",
+		"scope": null,
+		"escapedName": "vue-chartjs",
+		"name": "vue-chartjs",
+		"rawSpec": "",
+		"spec": "latest",
+		"type": "tag"
+	},
+	"_requiredBy": [
+		"#USER",
+		"/"
+	],
+	"_resolved": "https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-2.6.2.tgz",
+	"_shasum": "f0fe61892494325db8e2462cb0397b948b4434f4",
+	"_shrinkwrap": null,
+	"_spec": "vue-chartjs",
+	"_where": "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime",
+	"author": {
+		"name": "Jakub Juszczak",
+		"email": "jakub@posteo.de"
+	},
+	"babel": {
+		"presets": [
+			"es2015"
+		]
+	},
+	"browserify": {
+		"transform": [
+			"babelify"
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/apertureless/vue-chartjs/issues"
+	},
+	"contributors": [
+		{
+			"name": "Thorsten Lünborg",
+			"url": "https://github.com/LinusBorg"
+		},
+		{
+			"name": "Juan Carlos Alonso",
+			"url": "https://github.com/jcalonso"
+		}
+	],
+	"dependencies": {
+		"lodash": "^4.17.4"
+	},
+	"description": "vue.js wrapper for chart.js",
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.24.1",
+		"babel-loader": "^7.0.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"babel-runtime": "^6.23.0",
+		"chai": "^3.5.0",
+		"chart.js": "^2.5.0",
+		"chromedriver": "^2.28.0",
+		"connect-history-api-fallback": "^1.1.0",
+		"cross-env": "^3.2.4",
+		"cross-spawn": "^5.1.0",
+		"css-loader": "^0.28.0",
+		"eslint": "^3.19.0",
+		"eslint-config-standard": "^10.2.1",
+		"eslint-friendly-formatter": "^2.0.7",
+		"eslint-loader": "^1.7.1",
+		"eslint-plugin-html": "^2.0.1",
+		"eslint-plugin-import": "^2.2.0",
+		"eslint-plugin-node": "^4.2.2",
+		"eslint-plugin-promise": "^3.5.0",
+		"eslint-plugin-standard": "^3.0.1",
+		"eventsource-polyfill": "^0.9.6",
+		"express": "^4.15.2",
+		"extract-text-webpack-plugin": "^1.0.1",
+		"file-loader": "^0.10.1",
+		"function-bind": "^1.0.2",
+		"html-webpack-plugin": "^2.28.0",
+		"http-proxy-middleware": "^0.17.4",
+		"inject-loader": "^3.0.0",
+		"isparta-loader": "^2.0.0",
+		"jasmine-core": "^2.5.2",
+		"json-loader": "^0.5.4",
+		"karma": "^1.5.0",
+		"karma-coverage": "^1.1.1",
+		"karma-jasmine": "^1.0.2",
+		"karma-mocha": "^1.2.0",
+		"karma-phantomjs-launcher": "^1.0.4",
+		"karma-sinon-chai": "^1.2.0",
+		"karma-sourcemap-loader": "^0.3.7",
+		"karma-spec-reporter": "0.0.30",
+		"karma-webpack": "1.8.1",
+		"lolex": "^1.6.0",
+		"mocha": "^3.1.0",
+		"nightwatch": "^0.9.14",
+		"ora": "^1.2.0",
+		"phantomjs-prebuilt": "^2.1.13",
+		"selenium-server": "^3.3.1",
+		"shelljs": "^0.7.7",
+		"sinon": "^2.1.0",
+		"sinon-chai": "^2.9.0",
+		"url-loader": "^0.5.8",
+		"vue": "^2.3.0",
+		"vue-hot-reload-api": "^2.1.0",
+		"vue-html-loader": "^1.2.4",
+		"vue-loader": "^12.0.2",
+		"vue-style-loader": "^3.0.1",
+		"vue-template-compiler": "^2.3.0",
+		"webpack": "^1.13.2",
+		"webpack-dev-middleware": "^1.10.1",
+		"webpack-hot-middleware": "^2.17.1",
+		"webpack-merge": "1.1.1"
+	},
+	"directories": {},
+	"dist": {
+		"shasum": "f0fe61892494325db8e2462cb0397b948b4434f4",
+		"tarball": "https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-2.6.2.tgz"
+	},
+	"engines": {
+		"node": ">=6.9.0"
+	},
+	"files": [
+		"src",
+		"dist",
+		"es"
+	],
+	"gitHead": "25d37666877d4e472c00b5a056c135efe43ee693",
+	"greenkeeper": {
+		"ignore": [
+			"extract-text-webpack-plugin",
+			"karma-webpack",
+			"webpack",
+			"webpack-merge"
+		]
+	},
+	"homepage": "http://vue-chartjs.org",
+	"jsnext:main": "es/index.js",
+	"keywords": [
+		"ChartJs",
+		"Vue",
+		"Visualisation",
+		"Wrapper",
+		"Charts"
+	],
+	"license": "MIT",
+	"main": "dist/vue-chartjs.js",
+	"maintainers": [
+		{
+			"name": "apertureless",
+			"email": "netghost03@gmail.com"
+		}
+	],
+	"module": "es/index.js",
+	"name": "vue-chartjs",
+	"optionalDependencies": {},
+	"peerDependencies": {
+		"chart.js": "^2.5.0",
+		"vue": "^2.3.0"
+	},
+	"readme": "ERROR: No README data found!",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/apertureless/vue-chartjs.git"
+	},
+	"scripts": {
+		"build": "yarn run release && yarn run build:es",
+		"build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
+		"dev": "node build/dev-server.js",
+		"e2e": "node test/e2e/runner.js",
+		"lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+		"prepublish": "yarn run lint && yarn run test && yarn run build",
+		"release": "webpack --progress --hide-modules --config  ./build/webpack.release.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js && webpack --progress --hide-modules --config  ./build/webpack.release.full.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.full.min.js",
+		"test": "npm run unit",
+		"unit": "karma start test/unit/karma.conf.js --single-run"
+	},
+	"unpkg": "dist/vue-chartjs.full.min.js",
+	"version": "2.6.2"
+};
+
+/***/ }),
+/* 446 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(10)(
+  /* script */
+  __webpack_require__(244),
+  /* template */
+  __webpack_require__(452),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/Charts.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Charts.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-39b0bb98", Component.options)
+  } else {
+    hotAPI.reload("data-v-39b0bb98", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 447 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(10)(
+  /* script */
+  __webpack_require__(246),
+  /* template */
+  __webpack_require__(453),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/Post.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Post.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-dc123dba", Component.options)
+  } else {
+    hotAPI.reload("data-v-dc123dba", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 448 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(10)(
+  /* script */
+  __webpack_require__(247),
+  /* template */
+  null,
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/charts/BarChart.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0cc4c992", Component.options)
+  } else {
+    hotAPI.reload("data-v-0cc4c992", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 449 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(10)(
+  /* script */
+  __webpack_require__(248),
+  /* template */
+  null,
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/charts/LineChart.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1ef856d3", Component.options)
+  } else {
+    hotAPI.reload("data-v-1ef856d3", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 450 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(10)(
+  /* script */
+  __webpack_require__(249),
+  /* template */
+  null,
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/charts/PieChart.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-9032a78e", Component.options)
+  } else {
+    hotAPI.reload("data-v-9032a78e", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 451 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(10)(
+  /* script */
+  __webpack_require__(250),
+  /* template */
+  null,
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/carlospenalba/Documents/Dev/Projects/Backend/PHP/LaraRealTime/resources/assets/js/components/charts/RadarChart.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-93205782", Component.options)
+  } else {
+    hotAPI.reload("data-v-93205782", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 452 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.status === true) ? _c('div', [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-6"
+  }, [_c('bar-chart', {
+    attrs: {
+      "data": _vm.data,
+      "options": {
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('line-chart', {
+    attrs: {
+      "data": _vm.data,
+      "options": {
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    }
+  })], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-6"
+  }, [_c('pie-chart', {
+    attrs: {
+      "data": _vm.data,
+      "options": {
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('radar-chart', {
+    attrs: {
+      "data": _vm.data,
+      "options": {
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    }
+  })], 1)])]) : _vm._e()
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-39b0bb98", module.exports)
+  }
+}
+
+/***/ }),
+/* 453 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "panel-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.vote(_vm.id)
+      }
+    }
+  }, [_vm._v("\n        Votar\n    ")]), _vm._v(" "), _c('span', {
+    staticClass: "badge",
+    staticStyle: {
+      "float": "right"
+    }
+  }, [_vm._v(_vm._s(_vm.isVotes))])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-dc123dba", module.exports)
+  }
+}
+
+/***/ }),
+/* 454 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(224);
+module.exports = __webpack_require__(225);
+
 
 /***/ })
 /******/ ]);

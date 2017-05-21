@@ -5,9 +5,7 @@
 
     export default Bar.extend({
 
-        //  mixins: [mixins.reactiveProp],
-    	
-    	props: ['data', 'options'],
+        props: ['data', 'options'],
 
         mounted() {
             this.renderChart(this.data, this.options);
