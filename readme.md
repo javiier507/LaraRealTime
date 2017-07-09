@@ -7,5 +7,3 @@
 - Pusher
 
 ### by javiier507
-
-[![laravel.gif](https://s17.postimg.org/k6lyzr0wf/laravel.gif)](https://postimg.org/image/n0p4d732j/)
